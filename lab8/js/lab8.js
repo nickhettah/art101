@@ -15,6 +15,7 @@ console.log(diddyFunctionby5(3.5));
 console.log(diddyFunctionby5(-1));
 
 
+
 console.log("my array", array)
 document.getElementById("output").innerHTML += "<h2></h2><p>My Array: " + array + "</p>";//map diddy function
 

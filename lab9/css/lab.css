@@ -5,8 +5,8 @@
     padding: 10px;
     margin-bottom: 10px;
     border: solid 1px hsl(10, 100%, 49%);
-    background-color: hsl(227, 85%, 51%);
+    background-color: #1846ec;
   }
-  #screenshots {
-    width: 400px;
+  div {
+    background: rgba(0, 128, 0, 0.3) /* Green background with 30% opacity */
   }
