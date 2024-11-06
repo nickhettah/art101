@@ -4,9 +4,20 @@
 .minor-section {
     padding: 10px;
     margin-bottom: 10px;
-    border: solid 1px hsl(10, 100%, 49%);
+    border: solid 5px yellow;
     background-color: #1846ec;
   }
   div {
-    background: rgba(0, 128, 0, 0.3) /* Green background with 30% opacity */
+    background: rgba(0, 255, 0, 0.3) /* Green background with 30% opacity */
   }
+  /* Styling for elements with the "special" class */
+    
+  
+  
+  
+  .special {
+    background-color: lavender;
+    border: dotted 5px red;
+    color: pink;
+    font-weight: bold;
+}
