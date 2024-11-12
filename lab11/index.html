@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/site.css">
+    <link rel="stylesheet" type="text/css" href="css/lab.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/lab.js" defer></script>
+    <title>Lab11</title>
+</head>
+
+<body>
+<div id="content">
+    <section>
+        <h1>Lab 11 JavaScript Events and Forms</h1>
+
+        <!-- Challenge Section -->
+        <div id="challenge">
+            <h2>Challenge</h2>
+            <p>We worked in HTML and created something new with new commands and jQuery.</p>
+        </div>
+
+        <!-- Problems Section -->
+        <div id="problem">
+            <h2>Problems</h2>
+            <p>I faced a lot of problems with making it work right and just putting things in the wrong places and forgetting "{}".</p>
+        </div>
+
+        <!-- Results Section -->
+        <div id="results">
+            <h2>Results</h2>
+            <p>I have a special button and was able to get everything done. It was a fun assignment, and I completed it in a timely manner.</p>
+        </div>
+
+        <div id="output"></div>
+        <input type="text" id="user-name" placeholder="Input your name">
+        <button id="submit">Submit</button>
+    </section>
+</div>
+
+<script>
+// Helper function to sort the string
+function sortString(inputString) {
+    return inputString.split('').sort().join('');
+}
+
+$("#submit").click(function() {
+    const userName = $("#user-name").val();
+    const userNameSorted = sortString(userName);
+    $("#output").html('<div class="text"><p>' + userNameSorted + '</p></div>');
+});
+</script>
+
+</body>
+</html>
