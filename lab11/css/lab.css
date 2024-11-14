@@ -1,0 +1,20 @@
+.minor-section {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: solid 5px yellow;
+    background-color: #1846ec;
+  }
+  div {
+    background: rgba(0, 255, 0, 0.3) /* Green background with 30% opacity */
+  }
+  .text p {
+    display: inline-block;
+    max-width: 60%;
+    margin: 3px;
+    padding: 5px 10px;
+    border-radius: 15px;
+    background-color: darkgray;
+    color: white;
+    font-family: sans-serif;
+    font-size: 0.8em;
+  }
