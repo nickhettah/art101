@@ -1,9 +1,22 @@
-/* Here we can set styles for this lab page that we don't want to effect others pages */
+p{
+  padding: 10px;
+  margin-bottom: 10px;
+  text-indent:7%;
+  font-size:200%;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border:color-mix(in hsl shorter hue, green 10%, purple 5%);
+  background-color: rgb(66, 211, 255);
 
-/* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
-.minor-section {
-    padding: 10px;
-    margin-bottom: 10px;
-    border: solid 1px #888;
-    background-color: #DDD8C4;
-  }
+}
+h1{
+  width: 100%;
+  font-size: 300%;
+  font-family: cursive;
+  text-align: center;
+  background-color:pink;
+  border:solid 3px rgb(red, green, blue);
+
+}
+#screenshots{
+  width: 400px;
+}
