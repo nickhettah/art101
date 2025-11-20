@@ -2,9 +2,9 @@
 // Date: Dec 1st, 2024.
 
 // Function to fetch and display the comic
-function loadComic() {
+function loadrecipe() {
     // API URL for retrieving a specific comic by its number
-    var apiUrl = `https://xkcd.com/${614}/info.0.json`;
+    var apiUrl = `https://api.spoonacular.com/recipes/findByIngredients?ingredients=eggs`;
 
     // Make the AJAX request using Fetch API
     fetch(apiUrl)
@@ -20,16 +20,16 @@ function loadComic() {
 
                  // Create an image element and set its source, title, and alt attributes
         
-          const comicImage=document.createElement('img');
-          comicImage.src=imgUrl;
-          comicImage.title=title;  // Set title attribute for hover text
+          const recipesImage=document.createElement('img');
+          recipesImage.src=imgUrl;
+          recipesImage.title=title;  // Set title attribute for hover text
       
       const imageContainerDiv=document.getElementById('imageContainer');  // Get reference to container div
       
       imageContainerDiv.innerHTML='';  // Clear previous content of container div
 
       
-imageContainerDiv.appendChild(comicImage);  // Append new image element
+imageContainerDiv.appendChild(recipeImage);  // Append new image element
 
  
    alert(
@@ -47,4 +47,4 @@ imageContainerDiv.appendChild(comicImage);  // Append new image element
 }
 
 // Add event listener to button click to trigger fetching a new comic when clicked.
-document.getElementById("myButton").addEventListener("click", loadComic);
+document.getElementById("myButton").addEventListener("click", loadRecipe)
